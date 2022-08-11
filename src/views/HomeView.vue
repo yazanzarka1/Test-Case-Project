@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="grid grid-cols-3 gap-4 place-items-center m-4 mt-24">
+    <main class="grid md:grid-cols-3 gap-4 place-items-center m-4 mt-24">
       <div v-for="user in users.value" v-bind:key="user.id" class="bg-gray-200 w-full h-full p-4 rounded-lg hover:bg-gray-400 hover:cursor-pointer">
       <router-link :to="`/user/${user.login}`">
            <div class="flex items-center gap-2">
